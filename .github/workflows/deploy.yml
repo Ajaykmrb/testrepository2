@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+      - main
+
+
+
+name: Package
+
+
+
+jobs:
+  package:
+    name: Package distribution files
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
